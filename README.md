@@ -25,7 +25,7 @@ Or with yarn:
 yarn add -D github:frasun/wordpress-jest-mocks
 ```
 
-## Jest Setup
+## Jest Config
 
 In your `jest.config.js`, extend the default WordPress scripts configuration and add module name mappings:
 
@@ -34,6 +34,7 @@ const defaultConfig = require( '@wordpress/scripts/config/jest-unit.config.js' )
 
 module.exports = {
   ...defaultConfig,
+  transformIgnorePatterns: [ 'node_modules/(?!(wordpress-jest-mocks)/)' ],
   moduleNameMapper: {
     ...defaultConfig.moduleNameMapper,
     '^@wordpress/components$': '<rootDir>/node_modules/wordpress-jest-mocks/components.js',
