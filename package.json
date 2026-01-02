@@ -1,0 +1,36 @@
+{
+  "name": "wordpress-jest-mocks",
+  "version": "1.0.0",
+  "description": "Jest mock implementations for WordPress packages (@wordpress/components, @wordpress/block-editor, @wordpress/interactivity, @wordpress/i18n)",
+  "main": "index.js",
+  "keywords": [
+    "wordpress",
+    "jest",
+    "mocks",
+    "testing",
+    "gutenberg",
+    "block-editor"
+  ],
+  "author": "frasun",
+  "license": "MIT",
+  "peerDependencies": {
+    "jest": ">=27.0.0",
+    "react": ">=17.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^21.3.0",
+    "eslint": "^8.57.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frasun/wordpress-jest-mocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frasun/wordpress-jest-mocks/issues"
+  },
+  "homepage": "https://github.com/frasun/wordpress-jest-mocks#readme"
+}
